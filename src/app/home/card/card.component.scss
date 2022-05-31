@@ -1,0 +1,12 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  width: 600px;
+  border-radius: 20px;
+  margin: 35px 0 10px;
+  padding: 30px 35px;
+  -webkit-box-shadow: 0px 0px 43px -1px rgba(30, 30, 30, 0.46);
+  -moz-box-shadow: 0px 0px 43px -1px rgba(30, 30, 30, 0.46);
+  box-shadow: 0px 0px 43px -1px rgba(30, 30, 30, 0.46);
+}

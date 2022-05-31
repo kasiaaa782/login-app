@@ -5,8 +5,10 @@
   <a class="navbar-brand pointer" (click)="logout()">Logout</a>
 </nav>
 <main role="main" class="container">
-  <div class="">
-    <h1>Home</h1>
-    <p class="">TEST</p>
+  <div class="pt-3">
+    <h1>Cat info</h1>
+    <div class="card-container" *ngFor="let item of cardsList">
+      <app-card> {{ item.data }} </app-card>
+    </div>
   </div>
 </main>
