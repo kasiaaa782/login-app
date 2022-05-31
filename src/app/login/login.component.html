@@ -1,0 +1,47 @@
+<div class="login-wrapper">
+  <div class="card">
+    <div class="card-body">
+      <form
+        class="form-signin"
+        (ngSubmit)="onSubmit(loginForm)"
+        [formGroup]="loginForm"
+      >
+        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+
+        <input
+          formControlName="email"
+          type="email"
+          name="email"
+          class="form-control"
+          placeholder="Email address"
+          required
+          autofocus
+        />
+
+        <input
+          formControlName="password"
+          type="password"
+          name="password"
+          class="form-control"
+          placeholder="Password"
+          required
+        />
+
+        <button class="btn btn-lg btn-primary btn-block mt-3" type="submit">
+          Sign in
+        </button>
+
+        <div class="alert alert-danger" role="alert" *ngIf="isFormInvalid">
+          Please fill all fields
+        </div>
+        <div
+          class="alert alert-danger"
+          role="alert"
+          *ngIf="areCredentialsInvalid"
+        >
+          Invalid user or password
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
