@@ -64,7 +64,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
     this.http.get<CatInfo>(url).subscribe((card) => {
       if (this.checkIsDuplicatedCard(card)) {
-        console.log('duplikat');
         this.getCatCardInfo();
       } else {
         this.cardsList.push(card);
